@@ -6,9 +6,7 @@
   * {
     box-sizing: border-box;
     margin: 0;
-    /* ✅ Add this — kills all default margins */
     padding: 0;
-    /* ✅ Add this — kills all default padding */
   }
 
   html {
@@ -18,14 +16,11 @@
   }
 
   body {
-    background-color: #0d0d0d;
-    /* ✅ Change this — was #F2EBE0 cream, now dark to match your site */
-    color: #0D0B09;
+    background-color: #f5f0e8;
+    color: #1a1a1a;
     font-family: 'Outfit', system-ui, sans-serif;
     margin: 0;
-    /* ✅ Explicit zero margin */
     padding: 0;
-    /* ✅ Explicit zero padding */
   }
 
   ::-webkit-scrollbar {
@@ -34,21 +29,21 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: #E2D3C0;
+    background: #e8e0d4;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #BF7B16;
+    background: #c8a96e;
     border-radius: 0px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #8A5610;
+    background: #a07840;
   }
 
   ::selection {
-    background: #BF7B1633;
-    color: #0D0B09;
+    background: #f97316;
+    color: #fff;
   }
 }
 
@@ -58,58 +53,71 @@
   }
 
   .btn-primary {
-    @apply bg-charcoal text-cream px-8 py-3.5 text-xs tracking-widest uppercase font-sans font-medium transition-all duration-300 active:scale-95 focus:outline-none focus:ring-2 focus:ring-sand focus:ring-offset-2;
-    background-color: #0D0B09;
-    color: #F2EBE0;
+    @apply px-8 py-3.5 text-xs tracking-widest uppercase font-medium transition-all duration-300 active:scale-95 focus:outline-none;
+    background-color: #1a1a1a;
+    color: #f5f0e8;
+    font-family: 'Outfit', sans-serif;
   }
 
   .btn-primary:hover {
-    background-color: #BF7B16;
+    background-color: #f97316;
+    color: #fff;
   }
 
   .btn-outline {
-    @apply border text-charcoal px-8 py-3.5 text-xs tracking-widest uppercase font-sans font-medium transition-all duration-300 active:scale-95 focus:outline-none focus:ring-2 focus:ring-charcoal focus:ring-offset-2;
-    border-color: #0D0B09;
-    color: #0D0B09;
+    @apply border px-8 py-3.5 text-xs tracking-widest uppercase font-medium transition-all duration-300 active:scale-95 focus:outline-none;
+    border-color: #1a1a1a;
+    color: #1a1a1a;
+    font-family: 'Outfit', sans-serif;
   }
 
   .btn-outline:hover {
-    background-color: #0D0B09;
-    color: #F2EBE0;
+    background-color: #1a1a1a;
+    color: #f5f0e8;
   }
 
   .btn-ghost {
-    @apply text-charcoal px-4 py-2 text-sm tracking-wider uppercase font-sans font-medium transition-all duration-300 hover:text-sand focus:outline-none;
+    @apply px-4 py-2 text-sm tracking-wider uppercase font-medium transition-all duration-300 focus:outline-none;
+    color: #1a1a1a;
+    font-family: 'Outfit', sans-serif;
+  }
+
+  .btn-ghost:hover {
+    color: #f97316;
   }
 
   .section-heading {
-    @apply font-display text-4xl md:text-5xl lg:text-6xl font-light leading-tight;
-    color: #0D0B09;
+    @apply text-4xl md:text-5xl lg:text-6xl font-light leading-tight;
+    font-family: 'Cormorant Garamond', serif;
+    color: #1a1a1a;
   }
 
   .section-subheading {
-    @apply font-sans text-xs tracking-ultra uppercase font-medium;
-    color: #BF7B16;
+    @apply text-xs tracking-widest uppercase font-medium;
+    font-family: 'Outfit', sans-serif;
+    color: #f97316;
   }
 
   .input-luxury {
-    @apply w-full bg-transparent pb-3 pt-1 font-sans text-sm focus:outline-none transition-colors duration-200;
-    border-bottom: 1px solid rgba(13, 11, 9, 0.2);
-    color: #0D0B09;
+    @apply w-full bg-transparent pb-3 pt-1 text-sm focus:outline-none transition-colors duration-200;
+    font-family: 'Outfit', sans-serif;
+    border-bottom: 1px solid rgba(26, 26, 26, 0.2);
+    color: #1a1a1a;
   }
 
   .input-luxury::placeholder {
-    color: rgba(13, 11, 9, 0.35);
+    color: rgba(26, 26, 26, 0.35);
   }
 
   .input-luxury:focus {
-    border-bottom-color: #BF7B16;
+    border-bottom-color: #f97316;
   }
 
   .tag {
-    @apply inline-block text-xs tracking-widest uppercase font-sans font-medium px-3 py-1.5;
-    background-color: #E2D3C0;
-    color: rgba(13, 11, 9, 0.6);
+    @apply inline-block text-xs tracking-widest uppercase font-medium px-3 py-1.5;
+    font-family: 'Outfit', sans-serif;
+    background-color: rgba(26, 26, 26, 0.06);
+    color: rgba(26, 26, 26, 0.6);
   }
 }
 
